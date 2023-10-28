@@ -21,7 +21,6 @@ function usePokemonList(type) {
         //  we get the array of pokemons from result
         const pokemonResults = response.data.results 
         
-        console.log(response.data);
         //  queing the state update problem occored that react updated a final state when there are mutipal
         //  update staes. and to updated multiple date we used callback method that expects a object and when we do 
         //  tis it quests the state update. 
@@ -41,7 +40,6 @@ function usePokemonList(type) {
         
         
         //  now iterate on the data of each pokemon, and extract id, name, image, types
-        
         const pokeListResult = pokemonData.map((pokeData) => {
             const pokemon = pokeData.data;
             return {
